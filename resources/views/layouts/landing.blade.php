@@ -42,7 +42,7 @@
       <!--Keyden Styelsheet with Bootstrap 5-->
       <link rel="stylesheet" href="{{asset('asset')}}/css/kayden_4.css">
    </head>
-   <body data-offset="102">
+   <body data-offset="102" onload="loadForm()">
       <!--PRELOADER START-->
       <div id="preloader">
          <div class="text-center w-100">
@@ -605,41 +605,36 @@
                            </div>
                      </div>
                      <div class="col-md-6">
-                           <h3 class="mb-5 fs-4 text-center text-sm-left">Or Let's start to conversation</h3>
-                           <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-                              <div class="fcf-form-group">
-                                    <label for="Name" class="fcf-label">Name</label>
-                                    <div class="fcf-input-group">
-                                       <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                                    </div>
-                              </div>
-
-                              <div class="fcf-form-group">
-                                    <label for="Email" class="fcf-label">Email address</label>
-                                    <div class="fcf-input-group">
-                                       <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                                    </div>
-                              </div>
-
-                              <div class="fcf-form-group">
-                                    <label for="sub" class="fcf-label">Subject</label>
-                                    <div class="fcf-input-group">
-                                       <input type="text" id="sub" name="Email" class="fcf-form-control" required>
-                                    </div>
-                              </div>
-
-                              <div class="fcf-form-group">
-                                    <label for="Message" class="fcf-label">Message</label>
-                                    <div class="fcf-input-group">
-                                       <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                                    </div>
-                              </div>
-
-                              <div class="fcf-form-group">
-                                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-block">Send Message</button>
-                              </div>
-                           </form>
+                        <h3 class="mb-5 fs-4 text-center text-sm-left">Or Let's start to conversation</h3>
+                        <form id="fcf-form-id" class="fcf-form-class" method="post" action=""  >
+                           <div class="fcf-form-group">
+                                 <label for="Name" class="fcf-label">Name</label>
+                                 <div class="fcf-input-group">
+                                    <input type="text" id="Name" name="name" class="fcf-form-control name" required>
+                                 </div>
+                           </div>
+                           <div class="fcf-form-group">
+                                 <label for="Email" class="fcf-label">Email address</label>
+                                 <div class="fcf-input-group">
+                                    <input type="email" id="Email" name="email" class="fcf-form-control email" required>
+                                 </div>
+                           </div>
+                           <div class="fcf-form-group">
+                                 <label for="sub" class="fcf-label">Subject</label>
+                                 <div class="fcf-input-group">
+                                    <input type="text" id="sub" name="subject" class="fcf-form-control subject" required>
+                                 </div>
+                           </div>
+                           <div class="fcf-form-group">
+                                 <label for="Message" class="fcf-label">Message</label>
+                                 <div class="fcf-input-group">
+                                    <textarea id="Message" name="message" class="fcf-form-control message" rows="6" maxlength="3000" required></textarea>
+                                 </div>
+                           </div>
+                           <div class="fcf-form-group">
+                                 <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-block btnSend">Send Message</button>
+                           </div>
+                        </form>
                      </div>
                   </div>
                </div>
@@ -704,11 +699,11 @@
       
       <!--JavaScript START-->
       <!--Popper-->
+      <script src="{{asset('asset')}}/js/jquery.min.js"></script>
       <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <!--Bootstrap-->
       <script src="{{asset('asset')}}/js/bootstrap.min.js"></script>
       <!--JQuery-->
-      <script src="{{asset('asset')}}/js/jquery.min.js"></script>
       <!--AOS Animations-->
       <script src="{{asset('asset')}}/js/aos.js"></script>
       <!--Jquery Easing -->
@@ -740,5 +735,21 @@
          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
       <script src="js/switcher.js"></script>
+
+      <script>
+         let name = document.getElementsByClassName("name");
+         let email = document.getElementsByClassName("email");
+         let subject = document.getElementsByClassName("subject");
+         let message = document.getElementsByClassName("message");
+         let btnSend = document.getElementsByClassName("btnSend");
+
+         function loadForm(){
+
+            btnSend.disabled = true;
+         }
+
+         
+
+      </script>
    </body>
 </html>

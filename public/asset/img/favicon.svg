@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-favicon">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip-favicon)">
+    <rect width="50" height="50" fill="#01010d"/>
+    <path id="Path_2" data-name="Path 2" d="M15.008,0,7.456-9.92V0H1.984V-22.464H7.456v9.856l7.488-9.856h6.432l-8.7,11.008L21.7,0Z" transform="translate(13.016 36.464)" fill="#fff"/>
+  </g>
+</svg>

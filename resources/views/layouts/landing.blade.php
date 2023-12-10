@@ -560,22 +560,22 @@
                      <div class="input-control">
                         <label for="name">Name</label>
                         <input id="name" name="contactMsg_name" type="text">
-                        <div class="error"></div>
+                        <div class="error" id="nameError"></div>
                      </div>
                      <div class="input-control">
                         <label for="email">Email</label>
                         <input id="email" name="contactMsg_email" type="text">
-                        <div class="error"></div>
+                        <div class="error" id="emailError"></div>
                      </div>
                      <div class="input-control">
                         <label for="subject">Subject</label>
                         <input id="subject" name="contactMsg_subject" type="text">
-                        <div class="error"></div>
+                        <div class="error" id="subjectError"></div>
                      </div>
                      <div class="input-control">
                         <label for="message">Message</label>
                         <input id="message" name="contactMsg_message" type="text">
-                        <div class="error"></div>
+                        <div class="error" id="messageError"></div>
                      </div>
                      <button type="submit" id="submit">Send</button>
                   </form>

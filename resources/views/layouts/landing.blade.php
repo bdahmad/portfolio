@@ -38,6 +38,9 @@
 
    <!--Keyden Styelsheet with Bootstrap 5-->
    <link rel="stylesheet" href="{{asset('asset')}}/css/kayden_4.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/tiny-slider.css">
+
 </head>
 
 <body data-offset="102" onload="loadForm()">
@@ -230,34 +233,34 @@
             <div class="row w-100 g-5 g-md-0">
                <div class="col-6 col-md-3">
                   <!--Facts Item START-->
-                  <div class="fact d-flex flex-column align-items-center align-items-center">
+                  <!-- <div class="fact d-flex flex-column align-items-center align-items-center">
                      <h3 class="fs-2 d-inline-block"><span class="tmcounter" data-from="0" data-to="9" data-speed="1500">0</span><sup>+</sup></h3>
                      <p class="fs-4 d-inline-block text-center text-md-left">Years Experience</p>
-                  </div>
+                  </div> -->
                   <!--Facts Item END-->
                </div>
                <div class="col-6 col-md-3">
                   <!--Facts Item START-->
-                  <div class="fact d-flex flex-column align-items-center align-items-center">
+                  <!-- <div class="fact d-flex flex-column align-items-center align-items-center">
                      <h3 class="fs-2 d-inline-block"><span class="tmcounter" data-from="0" data-to="100" data-speed="1500">0</span><sup>+</sup></h3>
                      <p class="fs-4 d-inline-block text-center text-md-left">Happy Clients</p>
-                  </div>
+                  </div> -->
                   <!--Facts Item END-->
                </div>
                <div class="col-6 col-md-3">
                   <!--Facts Item START-->
-                  <div class="fact d-flex flex-column align-items-center align-items-center">
+                  <!-- <div class="fact d-flex flex-column align-items-center align-items-center">
                      <h3 class="fs-2 d-inline-block"><span class="tmcounter" data-from="0" data-to="8963" data-speed="1500">0</span></h3>
                      <p class="fs-4 d-inline-block text-center text-md-left">Downloads</p>
-                  </div>
+                  </div> -->
                   <!--Facts Item END-->
                </div>
                <div class="col-6 col-md-3">
                   <!--Facts Item START-->
-                  <div class="fact d-flex flex-column align-items-center align-items-center">
+                  <!-- <div class="fact d-flex flex-column align-items-center align-items-center">
                      <h3 class="fs-2 d-inline-block"><span class="tmcounter" data-from="0" data-to="2569" data-speed="1500">0</span></h3>
                      <p class="fs-4 d-inline-block text-center text-md-left">Projects done</p>
-                  </div>
+                  </div> -->
                   <!--Facts Item END-->
                </div>
             </div>
@@ -274,90 +277,53 @@
             <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Technologies</h2>
          </div>
          <!--Section Heading END-->
-         <!--Section Body START-->
-         <div class="section-body">
             <!--Gradient Grid START-->
-            <div class="kayden-gradient-grid">
-               <!--Gradient Grid ROW START-->
-               <div class="row g-0">
-                  <!--Gradient Grid Item START-->
-                  <div class="col-lg-4 text-center">
-                     <div class="p-5">
-                        <div class="fs-2 mb-3">
-                           <i class="fas fa-server"></i>
+            <div class="slider-container">
+               <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+                  <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                        <i class="fas fa-angle-left fa-5x"></i>
+                  </li>
+                  <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                        <i class="fas fa-angle-right fa-5x"></i>          
+                  </li>
+               </ul>
+               <div class="my-slider">
+                  <div class="slider-item">
+                        <div class="card">                
+                           <img src="{{asset('asset')}}/img/html.png" alt="">
+                           <h2>Html</h2>
                         </div>
-                        <h4 class="mb-3">Development</h4>
-                        <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     </div>
                   </div>
-                  <!--Gradient Grid Item END-->
-                  <!--Gradient Grid Item START-->
-                  <div class="col-lg-4 text-center">
-                     <div class="p-5">
-                        <div class="fs-2 mb-3">
-                           <i class="fas fa-mobile-alt"></i>
+                  
+                  <div class="slider-item">
+                        <div class="card">                
+                           <img src="{{asset('asset')}}/img/css.png" alt="">                       
+                           <h2>CSS</h2>
                         </div>
-                        <h4 class="mb-3">Responsive</h4>
-                        <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     </div>
                   </div>
-                  <!--Gradient Grid Item END-->
-                  <!--Gradient Grid Item START-->
-                  <div class="col-lg-4 text-center">
-                     <div class="p-5">
-                        <div class="fs-2 mb-3">
-                           <i class="fas fa-mug-hot"></i>
+                  
+                  <div class="slider-item">
+                        <div class="card">                
+                           <img src="{{asset('asset')}}/img/js.svg" alt="">
+                           <h2>JS</h2>
                         </div>
-                        <h4 class="mb-3">UX / UI Design</h4>
-                        <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     </div>
                   </div>
-                  <!--Gradient Grid Item END-->
-               </div>
-               <!--Gradient Grid ROW END-->
-               <!--Gradient Grid ROW START-->
-               <div class="row g-0">
-                  <!--Gradient Grid Item START-->
-                  <div class="col-lg-4 text-center">
-                     <div class="p-5">
-                        <div class="fs-2 mb-3">
-                           <i class="far fa-clone"></i>
+                  <div class="slider-item">
+                        <div class="card">                
+                           <img src="{{asset('asset')}}/img/js.svg" alt="">
+                           <h2>PHP</h2>
                         </div>
-                        <h4 class="mb-3">User Friendly</h4>
-                        <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     </div>
                   </div>
-                  <!--Gradient Grid Item END-->
-                  <!--Gradient Grid Item START-->
-                  <div class="col-lg-4 text-center">
-                     <div class="p-5">
-                        <div class="fs-2 mb-3">
-                           <i class="far fa-heart"></i>
-                        </div>
-                        <h4 class="mb-3">Lovely</h4>
-                        <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     </div>
-                  </div>
-                  <!--Gradient Grid Item END-->
-                  <!--Gradient Grid Item START-->
-                  <div class="col-lg-4 text-center">
-                     <div class="p-5">
-                        <div class="fs-2 mb-3">
-                           <i class="fas fa-rocket"></i>
-                        </div>
-                        <h4 class="mb-3">Bootstrap 5</h4>
-                        <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                     </div>
-                  </div>
-                  <!--Gradient Grid Item END-->
-               </div>
-               <!--Gradient Grid ROW END-->
+               </div>    
             </div>
             <!--Gradient Grid END-->
-         </div>
+         
          <!--Section Body END-->
       </div>
    </section>
+   
+
+
    <!--Services Section END-->
    <!--Portfolio Section START-->
    <section id="portfolio" class="secondary-section">
@@ -381,21 +347,6 @@
                      <div class="portfolio-description my-3">
                         <h3 class="fs-5 underline_text fw-bold d-inline-block">Man in Neon</h3>
                         <span class="d-block fw-light small-font-size">Street</span>
-                     </div>
-                  </a>
-
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="{{asset('asset')}}/img/portfolio2.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio2.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Girl in Yellow</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
                      </div>
                   </a>
 
@@ -725,6 +676,8 @@
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
+   <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
    <script src="{{asset('asset')}}/js/switcher.js"></script>
    <script src="{{asset('asset')}}/js/costom.js"></script>
 

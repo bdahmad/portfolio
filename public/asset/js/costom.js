@@ -65,3 +65,29 @@ const validateInputs = () => {
         setSuccess(message);
     }
 };
+
+
+//tiny-slider
+const slider = tns({
+    container: '.my-slider',
+    loop: true,
+    items: 1,
+    slideBy: 'page',
+    nav: false,    
+    autoplay: true,
+    speed: 600,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    controlsContainer: "#customize-controls",
+    responsive: {
+        640: {
+            items: 2,
+        },
+        
+        768: {
+            items: 3,
+        }
+    }
+
+  });

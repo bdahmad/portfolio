@@ -577,7 +577,7 @@
                         <input id="message" name="contactMsg_message" type="text">
                         <div class="error"></div>
                      </div>
-                     <button type="submit">Send</button>
+                     <button type="submit" id="submit">Send</button>
                   </form>
                </div>
             </div>

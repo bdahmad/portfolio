@@ -604,34 +604,28 @@
                </div>
                <div class="col-md-6">
                   <h3 class="mb-5 fs-4 text-center text-sm-left">Or Let's start to conversation</h3>
-                  <form id="fcf-form-id" class="fcf-form-class" method="post" action="">
-                     <div class="fcf-form-group">
-                        <label for="Name" class="fcf-label">Name</label>
-                        <div class="fcf-input-group">
-                           <input type="text" id="Name" name="name" class="fcf-form-control name" required>
-                        </div>
+                  <form id="form" action="/">
+                     <div class="input-control">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text">
+                        <div class="error"></div>
                      </div>
-                     <div class="fcf-form-group">
-                        <label for="Email" class="fcf-label">Email address</label>
-                        <div class="fcf-input-group">
-                           <input type="email" id="Email" name="email" class="fcf-form-control email" required>
-                        </div>
+                     <div class="input-control">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text">
+                        <div class="error"></div>
                      </div>
-                     <div class="fcf-form-group">
-                        <label for="sub" class="fcf-label">Subject</label>
-                        <div class="fcf-input-group">
-                           <input type="text" id="sub" name="subject" class="fcf-form-control subject" required>
-                        </div>
+                     <div class="input-control">
+                        <label for="subject">Subject</label>
+                        <input id="subject"name="subject" type="text">
+                        <div class="error"></div>
                      </div>
-                     <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">Message</label>
-                        <div class="fcf-input-group">
-                           <textarea id="Message" name="message" class="fcf-form-control message" rows="6" maxlength="3000" required></textarea>
-                        </div>
+                     <div class="input-control">
+                        <label for="message">Message</label>
+                        <input id="message"name="message" type="text">
+                        <div class="error"></div>
                      </div>
-                     <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-block btnSend">Send Message</button>
-                     </div>
+                     <button type="submit">Send</button>
                   </form>
                </div>
             </div>
@@ -735,11 +729,7 @@
    <script src="{{asset('asset')}}/js/costom.js"></script>
 
    <script>
-      let name = document.getElementsByClassName("name");
-      let email = document.getElementsByClassName("email");
-      let subject = document.getElementsByClassName("subject");
-      let message = document.getElementsByClassName("message");
-      let btnSend = document.getElementsByClassName("btnSend");
+     
 
       // function loadForm(){
 

@@ -555,25 +555,26 @@
                </div>
                <div class="col-md-6">
                   <h3 class="mb-5 fs-4 text-center text-sm-left">Or Let's start to conversation</h3>
-                  <form id="form" action="/">
+                  <form id="form" action="{{route('contMsg')}}" method="post">
+                     @csrf
                      <div class="input-control">
                         <label for="name">Name</label>
-                        <input id="name" name="name" type="text">
+                        <input id="name" name="contactMsg_name" type="text">
                         <div class="error"></div>
                      </div>
                      <div class="input-control">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="text">
+                        <input id="email" name="contactMsg_email" type="text">
                         <div class="error"></div>
                      </div>
                      <div class="input-control">
                         <label for="subject">Subject</label>
-                        <input id="subject"name="subject" type="text">
+                        <input id="subject" name="contactMsg_subject" type="text">
                         <div class="error"></div>
                      </div>
                      <div class="input-control">
                         <label for="message">Message</label>
-                        <input id="message"name="message" type="text">
+                        <input id="message" name="contactMsg_message" type="text">
                         <div class="error"></div>
                      </div>
                      <button type="submit">Send</button>

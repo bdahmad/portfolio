@@ -197,3 +197,15 @@ const slider = tns({
     }
 
   });
+
+
+
+  //slick slider
+
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    // asNavFor: '.slider-for',
+    dots: true,
+    focusOnSelect: true
+ });

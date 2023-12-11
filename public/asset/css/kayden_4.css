@@ -13694,3 +13694,22 @@ img {
     padding: 0 .5rem;
   }
 }
+
+
+
+.main {
+  font-family:Arial;
+  width:100%;
+  display:block;
+  margin:0 auto;
+}
+.slick {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}

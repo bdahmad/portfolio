@@ -36,6 +36,9 @@
    <!--OWL Carousel-->
    <link rel="stylesheet" href="{{asset('asset')}}/css/owl.carousel.min.css">
 
+   <link rel="stylesheet" href="{{asset('asset')}}/css/slick-theme.css">
+   <link rel="stylesheet" href="{{asset('asset')}}/css/slick.css">
+
    <!--Keyden Styelsheet with Bootstrap 5-->
    <link rel="stylesheet" href="{{asset('asset')}}/css/kayden_4.css">
 
@@ -277,51 +280,51 @@
             <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Technologies</h2>
          </div>
          <!--Section Heading END-->
-            <!--Gradient Grid START-->
-            <div class="slider-container">
-               <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
-                  <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
-                        <i class="fas fa-angle-left fa-5x"></i>
-                  </li>
-                  <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
-                        <i class="fas fa-angle-right fa-5x"></i>          
-                  </li>
-               </ul>
-               <div class="my-slider">
-                  <div class="slider-item">
-                        <div class="card">                
-                           <img src="{{asset('asset')}}/img/html.png" alt="">
-                           <h2>Html</h2>
-                        </div>
+         <!--Gradient Grid START-->
+         <div class="slider-container">
+            <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+               <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                  <i class="fas fa-angle-left fa-5x"></i>
+               </li>
+               <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                  <i class="fas fa-angle-right fa-5x"></i>
+               </li>
+            </ul>
+            <div class="my-slider">
+               <div class="slider-item">
+                  <div class="card">
+                     <img src="{{asset('asset')}}/img/html.png" alt="">
+                     <h2>Html</h2>
                   </div>
-                  
-                  <div class="slider-item">
-                        <div class="card">                
-                           <img src="{{asset('asset')}}/img/css.png" alt="">                       
-                           <h2>CSS</h2>
-                        </div>
+               </div>
+
+               <div class="slider-item">
+                  <div class="card">
+                     <img src="{{asset('asset')}}/img/css.png" alt="">
+                     <h2>CSS</h2>
                   </div>
-                  
-                  <div class="slider-item">
-                        <div class="card">                
-                           <img src="{{asset('asset')}}/img/js.svg" alt="">
-                           <h2>JS</h2>
-                        </div>
+               </div>
+
+               <div class="slider-item">
+                  <div class="card">
+                     <img src="{{asset('asset')}}/img/js.svg" alt="">
+                     <h2>JS</h2>
                   </div>
-                  <div class="slider-item">
-                        <div class="card">                
-                           <img src="{{asset('asset')}}/img/js.svg" alt="">
-                           <h2>PHP</h2>
-                        </div>
+               </div>
+               <div class="slider-item">
+                  <div class="card">
+                     <img src="{{asset('asset')}}/img/js.svg" alt="">
+                     <h2>PHP</h2>
                   </div>
-               </div>    
+               </div>
             </div>
-            <!--Gradient Grid END-->
-         
+         </div>
+         <!--Gradient Grid END-->
+
          <!--Section Body END-->
       </div>
    </section>
-   
+
 
 
    <!--Services Section END-->
@@ -334,101 +337,10 @@
          </div>
          <!--Section Heading END-->
          <!--Section Body START-->
-         <div class="section-body">
-            <!--Masonry Grid Container START-->
-            <div class="row gy-5 grid">
-               <!--Masonry Grid Item START-->
+
+         <div class="slider slider-nav">
+            <div class="slick">
                <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="./portfolio/portfolio1.html" class="portfolio-item portfolio-ajax underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio1.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Man in Neon</h3>
-                        <span class="d-block fw-light small-font-size">Street</span>
-                     </div>
-                  </a>
-
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="{{asset('asset')}}/img/portfolio3.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio3.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
-                     </div>
-                  </a>
-
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="{{asset('asset')}}/img/portfolio4.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio4.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
-                     </div>
-                  </a>
-
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="{{asset('asset')}}/img/portfolio5.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio5.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
-                     </div>
-                  </a>
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="{{asset('asset')}}/img/portfolio6.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio6.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
-                     </div>
-                  </a>
-
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
-                  <a href="{{asset('asset')}}/img/portfolio7.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
-                     <div class="portfolio-thumbnail">
-                        <img src="{{asset('asset')}}/img/portfolio7.jpg" class="img-fluid img-grayTransition" alt="">
-                     </div>
-                     <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
-                     </div>
-                  </a>
-
-               </div>
-               <!--Masonry Grid Item END-->
-               <!--Masonry Grid Item START-->
-               <div class="col-md-6 col-lg-4 grid-item">
-
                   <a href="{{asset('asset')}}/img/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
                      <div class="portfolio-thumbnail">
                         <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
@@ -438,15 +350,67 @@
                         <span class="d-block fw-light small-font-size">Neon</span>
                      </div>
                   </a>
-
                </div>
-               <!--Masonry Grid Item END-->
             </div>
-            <!--Masonry Grid Container END-->
+            <div class="slick">
+               <div class="col-md-6 col-lg-4 grid-item">
+                  <a href="{{asset('asset')}}/img/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+                     <div class="portfolio-thumbnail">
+                        <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
+                     </div>
+                     <div class="portfolio-description my-3">
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+                        <span class="d-block fw-light small-font-size">Neon</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="slick">
+               <div class="col-md-6 col-lg-4 grid-item">
+                  <a href="{{asset('asset')}}/img/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+                     <div class="portfolio-thumbnail">
+                        <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
+                     </div>
+                     <div class="portfolio-description my-3">
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+                        <span class="d-block fw-light small-font-size">Neon</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="slick">
+               <div class="col-md-6 col-lg-4 grid-item">
+                  <a href="{{asset('asset')}}/img/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+                     <div class="portfolio-thumbnail">
+                        <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
+                     </div>
+                     <div class="portfolio-description my-3">
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+                        <span class="d-block fw-light small-font-size">Neon</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="slick">
+               <div class="col-md-6 col-lg-4 grid-item">
+                  <a href="{{asset('asset')}}/img/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+                     <div class="portfolio-thumbnail">
+                        <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
+                     </div>
+                     <div class="portfolio-description my-3">
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
+                        <span class="d-block fw-light small-font-size">Neon</span>
+                     </div>
+                  </a>
+               </div>
+            </div>
          </div>
+
          <!--Section Body START-->
       </div>
    </section>
+
+
    <!--Portfolio Section END-->
    <!--Education Section START-->
    <section id="education">
@@ -675,21 +639,20 @@
    <script src="{{asset('asset')}}/js/kayden.js"></script>
    <!--JavaScript END-->
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
    <script src="{{asset('asset')}}/js/switcher.js"></script>
+
+   <script type="text/javascript" src="{{asset('asset')}}/js/slick.min.js"></script>
+
    <script src="{{asset('asset')}}/js/costom.js"></script>
 
-   <script>
-     
+   <script type="text/javascript">
 
-      // function loadForm(){
-
-      //    btnSend.disabled = true;
-      // }
-      // alert('ello');
    </script>
 </body>
 

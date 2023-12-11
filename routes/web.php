@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactMsgController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +17,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('logout', function () {
+    auth()->logout();
+    Session()->flush();
+    return Redirect::to('/');
+})->name('logout');
+
 Route::get('/', function () {
     return view('layouts.landing');
 })->name('lading');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.home.home');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::post('/message/submit',[ContactMsgController::class, 'sendMessage'])->name('contMsg');
+Route::post('/message/submit', [ContactMsgController::class, 'sendMessage'])->name('contMsg');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -31,4 +39,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

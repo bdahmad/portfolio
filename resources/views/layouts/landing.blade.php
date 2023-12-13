@@ -187,7 +187,7 @@
                            </li>
                         </ul>
                         <!--Social Links END-->
-                        <a href="#" class="btn btn-outline-primary" title="Download CV">Download CV</a>
+                        <a href="{{asset('asset/Ahmad_Ali.pdf')}}" class="btn btn-outline-primary" title="Download CV">Download CV</a>
                      </div>
                   </div>
                </div>
@@ -313,8 +313,20 @@
                </div>
                <div class="slider-item">
                   <div class="card">
-                     <img src="{{asset('asset')}}/img/js.svg" alt="">
+                     <img src="{{asset('asset')}}/img/php.png" alt="">
                      <h2>PHP</h2>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="card">
+                     <img src="{{asset('asset')}}/img/laravel.png" alt="">
+                     <h2>Laravel</h2>
+                  </div>
+               </div>
+               <div class="slider-item">
+                  <div class="card">
+                     <img src="{{asset('asset')}}/img/mysql.png" alt="">
+                     <h2>MySql</h2>
                   </div>
                </div>
             </div>
@@ -341,13 +353,13 @@
          <div class="slider slider-nav">
             <div class="slick">
                <div class="col-md-6 col-lg-4 grid-item">
-                  <a href="{{asset('asset')}}/img/portfolio8.jpg" class="portfolio-item portfolio-image underline_animation text-reset">
+                  <a href="https://github.com/adahmadali/Delicious" class="portfolio-item portfolio-image underline_animation text-reset">
                      <div class="portfolio-thumbnail">
                         <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
                      </div>
                      <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Delicious</h3>
+                        <span class="d-block fw-light small-font-size">Laravel</span>
                      </div>
                   </a>
                </div>
@@ -359,8 +371,8 @@
                         <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
                      </div>
                      <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">CaterServ</h3>
+                        <span class="d-block fw-light small-font-size">PHP (OOP)</span>
                      </div>
                   </a>
                </div>
@@ -372,8 +384,8 @@
                         <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
                      </div>
                      <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Khorcha</h3>
+                        <span class="d-block fw-light small-font-size">Laravel</span>
                      </div>
                   </a>
                </div>
@@ -385,8 +397,8 @@
                         <img src="{{asset('asset')}}/img/portfolio8.jpg" class="img-fluid img-grayTransition" alt="">
                      </div>
                      <div class="portfolio-description my-3">
-                        <h3 class="fs-5 underline_text fw-bold d-inline-block">Blue words</h3>
-                        <span class="d-block fw-light small-font-size">Neon</span>
+                        <h3 class="fs-5 underline_text fw-bold d-inline-block">SolarTech</h3>
+                        <span class="d-block fw-light small-font-size">PHP</span>
                      </div>
                   </a>
                </div>
@@ -428,34 +440,87 @@
                   <tbody>
                      <tr>
                         <td class="d-table-cell d-sm-none">
-                           <div class="mb-3 fw-light">2010-2016</div>
-                           <div class="mb-3 fw-bold">Univercity of Boston, Computer Science</div>
-                           <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</div>
+                           <div class="mb-3 fw-light">2017-2022</div>
+                           <div class="mb-3 fw-bold">Bangladesh University of Business & Technology</div>
+                           <div>BSc in CSE <br>Software Engg <br>CGPA: 3.41</div>
                         </td>
                         <td class="w-25 d-none d-sm-table-cell">
-                           <span class="fw-light fs-5">2010-2016</span>
+                           <span class="fw-light fs-5">2017-2022</span>
                         </td>
                         <td class="w-50 d-none d-sm-table-cell">
-                           <span class="fw-bold fs-5">Univercity of Boston, Computer Science</span>
+                           <span class="fw-bold fs-5">Bangladesh University of Business & Technology</span>
                         </td>
                         <td class="w-25 d-none d-sm-table-cell">
-                           <span class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </span>
+                           <span class="fw-normal text-secondary">BSc in CSE <br>Software Engg <br>CGPA: 3.41 </span>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="d-table-cell d-sm-none">
+                           <div class="mb-3 fw-light">2016</div>
+                           <div class="mb-3 fw-bold">Masjid Mission Academy,(School & College), Rajshahi</div>
+                           <div>Higher School Certificate (HSC) <br>Science <br>GPA: 4.42</div>
+                        </td>
+                        <td class="w-25 d-none d-sm-table-cell">
+                           <span class="fw-light fs-5">2016</span>
+                        </td>
+                        <td class="w-50 d-none d-sm-table-cell">
+                           <span class="fw-bold fs-5">Masjid Mission Academy,(School & College), Rajshahi</span>
+                        </td>
+                        <td class="w-25 d-none d-sm-table-cell">
+                           <span class="fw-normal text-secondary">Higher School Certificate (HSC) <br>Science <br>GPA: 4.42 </span>
                         </td>
                      </tr>
                      <tr>
                         <td class="d-table-cell d-sm-none border-0">
-                           <div class="mb-3 fw-light">2010-2016</div>
-                           <div class="mb-3 fw-bold">Univercity of Boston, Computer Science</div>
-                           <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</div>
+                           <div class="mb-3 fw-light">2014</div>
+                           <div class="mb-3 fw-bold">Masjid Mission Academy,(School & College), Rajshahi</div>
+                           <div>Secondary School Certificate (SSC) <br>Science <br>GPA: 4.42</div>
                         </td>
                         <td class="w-25 d-none d-sm-table-cell border-0">
-                           <span class="fw-light fs-5">2010-2016</span>
+                           <span class="fw-light fs-5">2014</span>
                         </td>
                         <td class="w-50 d-none d-sm-table-cell border-0">
-                           <span class="fw-bold fs-5">Univercity of Boston, Computer Science</span>
+                           <span class="fw-bold fs-5">Masjid Mission Academy,(School & College), Rajshahi</span>
                         </td>
                         <td class="w-25 d-none d-sm-table-cell border-0">
-                           <span class="fw-normal text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </span>
+                           <span class="fw-normal text-secondary">Secondary School Certificate (SSC) <br>Science <br>GPA: 4.42 </span>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <!--Educational Table END-->
+            </div>
+         </div>
+         <!--Section Body END-->
+      </div>
+   </section>
+   <section id="education">
+      <div class="container">
+         <!--Section Heading START-->
+         <div class="heading text-center mb-5">
+            <h2 class="fs-3 kayden-underline-left mb-5 fw-bold text-uppercase d-inline-block">Traning</h2>
+         </div>
+         <!--Section Heading END-->
+         <!--Section Body START-->
+         <div class="section-body">
+            <div class="table-responsive">
+               <!--Educational Table START-->
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="d-table-cell d-sm-none">
+                           <div class="mb-3 fw-light">April, 2023 - June, 2023</div>
+                           <div class="mb-3 fw-bold">Pencil Box Institute, Kawran Bazar, Dhaka</div>
+                           <div>PHP with Laravel Framework</div>
+                        </td>
+                        <td class="w-25 d-none d-sm-table-cell">
+                           <span class="fw-light fs-5">April, 2023 - June, 2023</span>
+                        </td>
+                        <td class="w-50 d-none d-sm-table-cell">
+                           <span class="fw-bold fs-5">Pencil Box Institute, Kawran Bazar, Dhaka</span>
+                        </td>
+                        <td class="w-25 d-none d-sm-table-cell">
+                           <span class="fw-normal text-secondary">PHP with Laravel Framework</span>
                         </td>
                      </tr>
                   </tbody>

@@ -24,7 +24,10 @@
                 <!-- general form elements -->
                 <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Quick Example</h3>
+                        <div class="row justify-content-between">
+                            <h4>Add About</h4>
+                            <a href="#" class="btn btn-sm btn-info ">All About</a>
+                        </div>
                         <form>
                             <div class="card-body">
                                 <div class="form-group">
